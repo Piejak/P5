@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Breaking down the Blockbusters</title>
+		<meta charset="UTF-8"/> 
+		<link href="base.css" type="text/css" rel="stylesheet" />
+		<link href="style.css" type="text/css" rel="stylesheet" />
+		<link href="tooltip.css" type="text/css" rel="stylesheet" />
+		<!-- libraries -->
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+		<script type="text/javascript" src="gscroll.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">
+		</script>
+		<script src="https://d3js.org/d3-queue.v3.min.js"></script>
+
+		<!-- actual scripts -->
+		<script type="text/javascript" src="data.js"></script>	 
+		<script type="text/javascript" src="main.js"></script>	 
+   	</head>
+   	<body>
+	   	<div id="inner-content">
+			<div class="article-title">Breaking down the Blockbusters - An exploration of the data behind the decade's highest grossing movies</div>
+			<div class="timestamp">By Brian Piejak</div>
+			<div class="clearboth"></div>
+			<div class="dek">
+				If we look at all of the movies in the last decade that have grossed over $100,000,000, what similarities can we find in the data? Is there a formula the movie studios are using to churn out their biggest moneymakers? Let's find out.
+			</div>
+			<div id="infographic">
+				<div id="graphic">
+					<div id="steps">
+						<!-- infographic steps go here -->
+						<section class="step">
+							<div id='scroll-pad'></div>
+							<div class="scroll">
+								<!-- <p>Scroll</p> -->
+							</div>
+						</section>
+
+						<section class="step">
+							<div class="title">
+								People love superheroes<br />
+								and Twilight is their guilty pleasure
+							</div>
+							Of the list of movies grossing more than $100,000,000 colored according to their rating on IMDB,
+							the top grossing are primarily superhero movies all with high ratings. The Twilight saga are the largest
+							circles with the worst ratings. People don't like the movies, but something keeps them coming back to the theaters.
+						</section>
+
+						<section class="step">
+							<div class="title">
+								You don't have to spend money to make money
+							</div>
+							Adjusting for the profit each movie made by subtracting the budget from gross earnings we see a lot more parity in the sizes of the movies in the graph. We also see the lower rated movies growing in size, suggesting that the studios might be sacrificing quality for a lower budget to turn more of a profit and consumers are picking up on this in the form of ratings.
+						</section>
+
+						<section class="step">
+							<div class="title">
+								Just explicit enough
+							</div>
+							The majority of the movies as well as those making the most profit are rated PG-13. Some R rated films made comparable profits, but it seems like a studio exec's safest bet is to make sure teens can get into the theater without a parent.
+						</section>
+
+
+						<section class="step">
+							<div class="title">
+								Length doesn't matter
+							</div>
+							It seems that consumers aren't necessarily concerned about getting the most bang for their buck in terms of movie length. With the trend of movies becoming longer, you might expect to see the lengthier flicks turning more of a profit. However, films like The Avenger and Iron Man 3, both around three hours long have comparable profits to Jurrasic World which has a full hour less of runtime. The darkest dot on the plot - The Wolf of Wall Street, clocking in at a whopping four hours long, is relatively small in terms of profit made.
+						</section>
+					</div>
+					<div id="graph">
+						<div id='legend' style='margin-top: 7px; background-color: white; margin-left: 30px !important;'>
+							<p id="legend1" class="legend-title"><strong>Legend</strong></p>
+							<p class="legend-title1"><strong>Sizing: </strong><span id="legend-sizing" class="legend-text"></span></p>
+							<p class="legend-title1"><strong>Coloring: </strong><span id="legend-coloring" class="legend-text"></span></p>
+						</div>
+						<div id="svg-container">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		   </div>
+		   <div class='tooltip'>
+		   	<div>
+		   		<span id='title' style='font-weight:bold;'></span>
+		   		<!-- <span id='company'></span> -->
+		   	</div>
+		   	<div class='blue-border' id='genre'></div>
+		   	<div class=''>
+		   		IMDB Rating <span class='right-bold' id='rating'></span>
+		   	</div>
+		   	<div>
+		   		Revenue <span class='right-bold' id='revenue'></span>
+		   	</div>
+		   	<div>
+		   		Profit <span class='right-bold' id='profit'></span>
+		   	</div>
+		   	<div>
+		   		Rating <span class='right-bold' id='content_rating'></span>
+		   	</div>
+		   	<div>
+		   		Duration <span class='right-bold' id='duration'></span>
+		   	</div>
+		   </div>
+	</body>
+</html>
+

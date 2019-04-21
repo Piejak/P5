@@ -1,0 +1,177 @@
+/*
+TEMPLATE STYLES FOR STANDALONE
+don't change these. instead, override them in index.html
+*/
+body,
+html {
+    font-family: "TiemposTextWeb-Regular", "Georgia";
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+a img,
+img {
+    border: 0;
+    outline: 0;
+}
+
+.clearboth {
+    clear: both;
+    height: 0;
+}
+
+.container {
+    max-width: 1410px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#inner-content {
+    max-width: 1160px;
+    margin: 60px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#infographic {
+    padding: 0 10px 0 10px;
+    min-height: 500px;
+    position: relative;
+    display: block;
+}
+
+ul,
+ol,
+dl,
+dt,
+dd {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/**/
+
+.article-title,
+.video-title,
+.cta-text {
+    font-family: "HaasDisplayBold", "Helvetica";
+    font-size: 50px;
+    color: #262626;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.dek,
+.byline-name,
+.module-description {
+    font-family: "TiemposTextWeb-Regular", "Georgia";
+    font-size: 20px;
+    color: #767676;
+    max-width: 830px;
+    text-align: center;
+    margin: 0 auto 52px;
+    padding: 0 10px 0 10px;
+    margin-top: 16px;
+    width: 80%;
+    margin-bottom: 0px;
+}
+
+.byline-by,
+.timestamp {
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+    color: #626262;
+    text-align: center;
+}
+
+.timestamp {
+    width: 455px;
+    margin: 10px auto 40px auto;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.article-section-header,
+.curiosity-index-tag,
+.video-timestamp {
+    font-family: "HaasText", "Georgia";
+}
+
+.source {
+    margin: 2px 20px 4px;
+    float: left;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* tooltip */
+div.tooltip {
+    font-family: "Arial", "Helvetica";
+    position: absolute;
+    top: -1000px;
+    width: 220px;
+    min-height: 50px;
+    padding: 10px;
+    font-size: 13px;
+    background: rgba(255, 255, 255, .98);
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 10px lightgray;
+    color: black;
+    pointer-events: none;
+}
+
+.tooltip:after,
+.tooltip:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.tooltip:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 12px;
+    margin-left: -12px;
+}
+
+.tooltip:before {
+    border-color: rgba(102, 102, 102, 0);
+    border-top-color: lightgray;
+    border-width: 13px;
+    margin-left: -13px;
+}
+
+.tooltip-hidden {
+    -webkit-transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    -webkit-opacity: 0;
+    opacity: 0;
+    /* filter:~"alpha(opacity=@{0})"; */
+}
+
+img.infographic {
+    width: 100%;
+}
